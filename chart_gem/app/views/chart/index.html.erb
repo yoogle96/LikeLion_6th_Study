@@ -1,0 +1,6 @@
+<h1>막대 차트</h1>
+<%=column_chart User.group(:name).maximum(:visit) %>
+<h1>원형 차트</h1>
+<%=pie_chart User.group(:name).maximum(:visit) %>
+<h1>바 차트</h1>
+<%=bar_chart User.group(:name).maximum(:visit) %>

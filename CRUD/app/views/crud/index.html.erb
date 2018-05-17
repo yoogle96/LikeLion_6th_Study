@@ -1,0 +1,26 @@
+<h1>목록입니다.</h1>
+<%= @rap_name %>
+<ul>
+  <% @student.each do |students|%>
+  <li><a href = "crud/<%= students.id%>"><%= students.name %></li>
+  <% end %>
+</ul>
+
+<p><%= @rap_name %></p>
+
+<a href="/crud/new">생성</a>
+
+
+<!-- <% User.each do |old_users| %>
+        <% if (@users.movie == old_users.movie %>
+            <% if (@users.movie == 'loco')%>
+              <% @print_title = @loco_title %>
+            <% elsif(@users.movie == 'thriller' %>
+              <% @print_title = @thriller_title %>
+            <% elsif(@users.movie == 'sf' %>
+              <% @print_title = @sf_title %>
+            <% elsif(@users.movie == 'comedy' %>
+              <% @print_title = @comoedy_title %>
+            <% end %>
+        <% end %>
+    <% end %> -->
